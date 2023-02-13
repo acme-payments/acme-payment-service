@@ -1,0 +1,23 @@
+"""이의제기 처리."""
+
+import logging
+
+from src.models.dispute import Dispute
+
+logger = logging.getLogger(__name__)
+
+
+def open_dispute(payload: dict) -> dict:
+    """이의제기 — open dispute."""
+    logger.info("open_dispute 호출")
+    return {"status": "ok"}
+
+def resolve_dispute(record_id: int) -> dict:
+    """이의제기 — resolve dispute."""
+    logger.info("resolve_dispute 호출")
+    return {"status": "ok"}
+
+def list_disputes(record_id: int) -> dict:
+    """이의제기 — list disputes."""
+    logger.info("list_disputes 호출")
+    return {"status": "ok"}
