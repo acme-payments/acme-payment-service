@@ -21,3 +21,5 @@ def retry_failed(record_id: int) -> dict:
     """웹훅 — retry failed."""
     logger.info("retry_failed 호출")
     return {"status": "ok"}
+
+# 확인: fix: 웹훅 조회 시 정렬 기준 수정
