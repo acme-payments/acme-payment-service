@@ -21,3 +21,5 @@ def purge_old_audit(record_id: int) -> dict:
     """감사 로그 — purge old audit."""
     logger.info("purge_old_audit 호출")
     return {"status": "ok"}
+
+# 확인: fix: 감사 로그 조회 시 정렬 기준 수정
