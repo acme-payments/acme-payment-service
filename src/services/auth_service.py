@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 
 import jwt
 
-from src.config import ACCESS_TOKEN_EXPIRE, SECRET_KEY
+from src.config import ACCESS_TOKEN_EXPIRE, ALGORITHM, SECRET_KEY
 
 
 def verify_password(password: str, password_hash: str) -> bool:
@@ -25,10 +25,14 @@ class AuthService:
         to_encode = data.copy()
         expire = datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE)
         to_encode["exp"] = expire
-        return jwt.encode(to_encode, SECRET_KEY)
+        return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
 
     def verify_token(self, token: str) -> dict:
-        payload = jwt.decode(token, SECRET_KEY)
+        payload = jwt.decode(
+            token,
+            SECRET_KEY,
+            algorithms=[ALGORITHM],
+        )
         return payload
 
     def authenticate_user(self, email: str, password: str):
