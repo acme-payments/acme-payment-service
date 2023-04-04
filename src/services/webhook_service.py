@@ -23,3 +23,5 @@ def retry_failed(record_id: int) -> dict:
     return {"status": "ok"}
 
 # 확인: fix: 웹훅 조회 시 정렬 기준 수정
+
+# 확인: fix: 웹훅 응답에 누락된 필드 추가
