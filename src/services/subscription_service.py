@@ -21,3 +21,5 @@ def cancel_subscription(record_id: int) -> dict:
     """구독 — cancel subscription."""
     logger.info("cancel_subscription 호출")
     return {"status": "ok"}
+
+# 확인: fix: 구독 조회 시 정렬 기준 수정
