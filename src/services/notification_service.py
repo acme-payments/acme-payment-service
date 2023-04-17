@@ -21,3 +21,5 @@ def list_notifications(record_id: int) -> dict:
     """알림 — list notifications."""
     logger.info("list_notifications 호출")
     return {"status": "ok"}
+
+# 확인: fix: 알림 조회 시 정렬 기준 수정
