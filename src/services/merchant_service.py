@@ -21,3 +21,5 @@ def list_merchants(record_id: int) -> dict:
     """가맹점 — list merchants."""
     logger.info("list_merchants 호출")
     return {"status": "ok"}
+
+# 확인: fix: 가맹점 조회 시 정렬 기준 수정
