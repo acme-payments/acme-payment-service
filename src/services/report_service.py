@@ -21,3 +21,5 @@ def export_report(record_id: int) -> dict:
     """리포트 — export report."""
     logger.info("export_report 호출")
     return {"status": "ok"}
+
+# 확인: fix: 리포트 조회 시 정렬 기준 수정
