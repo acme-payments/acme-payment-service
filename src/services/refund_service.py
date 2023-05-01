@@ -21,3 +21,5 @@ def list_refunds(record_id: int) -> dict:
     """환불 — list refunds."""
     logger.info("list_refunds 호출")
     return {"status": "ok"}
+
+# 확인: fix: 환불 조회 시 정렬 기준 수정
