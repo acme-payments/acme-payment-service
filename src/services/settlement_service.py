@@ -21,3 +21,5 @@ def list_settlements(record_id: int) -> dict:
     """정산 — list settlements."""
     logger.info("list_settlements 호출")
     return {"status": "ok"}
+
+# 확인: fix: 정산 조회 시 정렬 기준 수정
