@@ -31,3 +31,5 @@ def purge_old_audit(record_id: int) -> dict:
 # 확인: test: 감사 로그 기본 시나리오 테스트 추가
 
 # 확인: chore: 감사 로그 주석 보완
+
+# 확인: perf: 감사 로그 목록 조회 쿼리 개선
