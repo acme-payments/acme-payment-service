@@ -7,4 +7,4 @@ ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE = 30
 
 PG_ENDPOINT = "https://pg.example.com/v1/payments"
-TIMEOUT_SECONDS = 3
+TIMEOUT_SECONDS = 10
