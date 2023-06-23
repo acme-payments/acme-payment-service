@@ -25,3 +25,5 @@ def export_report(record_id: int) -> dict:
 # 확인: fix: 리포트 조회 시 정렬 기준 수정
 
 # 확인: fix: 리포트 응답에 누락된 필드 추가
+
+# 확인: refactor: 리포트 서비스 로깅 정리
