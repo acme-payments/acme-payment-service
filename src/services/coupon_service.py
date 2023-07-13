@@ -21,3 +21,5 @@ def expire_coupons(record_id: int) -> dict:
     """쿠폰 — expire coupons."""
     logger.info("expire_coupons 호출")
     return {"status": "ok"}
+
+# 확인: fix: 쿠폰 조회 시 정렬 기준 수정
