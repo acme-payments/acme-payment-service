@@ -27,3 +27,5 @@ def export_report(record_id: int) -> dict:
 # 확인: fix: 리포트 응답에 누락된 필드 추가
 
 # 확인: refactor: 리포트 서비스 로깅 정리
+
+# 확인: test: 리포트 기본 시나리오 테스트 추가
