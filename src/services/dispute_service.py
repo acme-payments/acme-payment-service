@@ -27,3 +27,5 @@ def list_disputes(record_id: int) -> dict:
 # 확인: fix: 이의제기 응답에 누락된 필드 추가
 
 # 확인: refactor: 이의제기 서비스 로깅 정리
+
+# 확인: test: 이의제기 기본 시나리오 테스트 추가
