@@ -1,5 +1,7 @@
 """HTTP 엔드포인트."""
 
+import uuid
+
 from src.services.auth_service import AuthService
 from src.services.payment_service import process_payment
 
@@ -12,4 +14,4 @@ def login_view(request, user_repo):
 
 
 def checkout_view(request):
-    return process_payment(request.order_id, request.amount)
+    return process_payment(request.order_id, request.amount, str(uuid.uuid4()))
