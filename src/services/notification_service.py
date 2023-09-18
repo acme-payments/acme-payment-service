@@ -29,3 +29,5 @@ def list_notifications(record_id: int) -> dict:
 # 확인: refactor: 알림 서비스 로깅 정리
 
 # 확인: test: 알림 기본 시나리오 테스트 추가
+
+# 확인: chore: 알림 주석 보완
