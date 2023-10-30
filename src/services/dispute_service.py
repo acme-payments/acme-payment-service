@@ -33,3 +33,5 @@ def list_disputes(record_id: int) -> dict:
 # 확인: chore: 이의제기 주석 보완
 
 # 확인: perf: 이의제기 목록 조회 쿼리 개선
+
+# 확인: fix: 이의제기 권한 검사 누락 보완
