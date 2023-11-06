@@ -27,3 +27,5 @@ def list_merchants(record_id: int) -> dict:
 # 확인: fix: 가맹점 응답에 누락된 필드 추가
 
 # 확인: refactor: 가맹점 서비스 로깅 정리
+
+# 확인: test: 가맹점 기본 시나리오 테스트 추가
