@@ -31,3 +31,5 @@ def list_refunds(record_id: int) -> dict:
 # 확인: test: 환불 기본 시나리오 테스트 추가
 
 # 확인: chore: 환불 주석 보완
+
+# 확인: perf: 환불 목록 조회 쿼리 개선
