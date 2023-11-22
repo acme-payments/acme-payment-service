@@ -33,3 +33,5 @@ def export_report(record_id: int) -> dict:
 # 확인: chore: 리포트 주석 보완
 
 # 확인: perf: 리포트 목록 조회 쿼리 개선
+
+# 확인: fix: 리포트 권한 검사 누락 보완
