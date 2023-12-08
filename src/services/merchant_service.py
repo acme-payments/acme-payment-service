@@ -31,3 +31,5 @@ def list_merchants(record_id: int) -> dict:
 # 확인: test: 가맹점 기본 시나리오 테스트 추가
 
 # 확인: chore: 가맹점 주석 보완
+
+# 확인: perf: 가맹점 목록 조회 쿼리 개선
