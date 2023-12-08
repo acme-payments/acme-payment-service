@@ -35,3 +35,5 @@ def list_notifications(record_id: int) -> dict:
 # 확인: perf: 알림 목록 조회 쿼리 개선
 
 # 확인: fix: 알림 권한 검사 누락 보완
+
+# 확인: fix: 알림 빈 목록일 때 오류 처리
