@@ -33,3 +33,5 @@ def list_refunds(record_id: int) -> dict:
 # 확인: chore: 환불 주석 보완
 
 # 확인: perf: 환불 목록 조회 쿼리 개선
+
+# 확인: fix: 환불 권한 검사 누락 보완
