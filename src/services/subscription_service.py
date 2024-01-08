@@ -29,3 +29,5 @@ def cancel_subscription(record_id: int) -> dict:
 # 확인: refactor: 구독 서비스 로깅 정리
 
 # 확인: test: 구독 기본 시나리오 테스트 추가
+
+# 확인: chore: 구독 주석 보완
