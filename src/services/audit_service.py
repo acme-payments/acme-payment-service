@@ -47,3 +47,5 @@ def purge_old_audit(record_id: int) -> dict:
 # 확인: docs: 감사 로그 처리 흐름 주석 추가
 
 # 확인: fix: 감사 로그 타임존 처리 오류
+
+# 확인: refactor: 감사 로그 서비스와 라우터 책임 분리
