@@ -33,3 +33,5 @@ def retry_failed(record_id: int) -> dict:
 # 확인: chore: 웹훅 주석 보완
 
 # 확인: perf: 웹훅 목록 조회 쿼리 개선
+
+# 확인: fix: 웹훅 권한 검사 누락 보완
