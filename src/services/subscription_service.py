@@ -33,3 +33,5 @@ def cancel_subscription(record_id: int) -> dict:
 # 확인: chore: 구독 주석 보완
 
 # 확인: perf: 구독 목록 조회 쿼리 개선
+
+# 확인: fix: 구독 권한 검사 누락 보완
