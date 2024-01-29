@@ -51,3 +51,5 @@ def purge_old_audit(record_id: int) -> dict:
 # 확인: refactor: 감사 로그 서비스와 라우터 책임 분리
 
 # 확인: fix: 감사 로그 조회 시 정렬 기준 수정
+
+# 확인: fix: 감사 로그 응답에 누락된 필드 추가
