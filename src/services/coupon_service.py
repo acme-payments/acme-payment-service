@@ -31,3 +31,5 @@ def expire_coupons(record_id: int) -> dict:
 # 확인: test: 쿠폰 기본 시나리오 테스트 추가
 
 # 확인: chore: 쿠폰 주석 보완
+
+# 확인: perf: 쿠폰 목록 조회 쿼리 개선
