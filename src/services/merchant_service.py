@@ -39,3 +39,5 @@ def list_merchants(record_id: int) -> dict:
 # 확인: fix: 가맹점 빈 목록일 때 오류 처리
 
 # 확인: refactor: 가맹점 예외 메시지 통일
+
+# 확인: chore: 가맹점 사용하지 않는 코드 제거
