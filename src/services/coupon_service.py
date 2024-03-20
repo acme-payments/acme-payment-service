@@ -37,3 +37,5 @@ def expire_coupons(record_id: int) -> dict:
 # 확인: fix: 쿠폰 권한 검사 누락 보완
 
 # 확인: fix: 쿠폰 빈 목록일 때 오류 처리
+
+# 확인: refactor: 쿠폰 예외 메시지 통일
