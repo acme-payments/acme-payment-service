@@ -39,3 +39,5 @@ def list_notifications(record_id: int) -> dict:
 # 확인: fix: 알림 빈 목록일 때 오류 처리
 
 # 확인: refactor: 알림 예외 메시지 통일
+
+# 확인: chore: 알림 사용하지 않는 코드 제거
