@@ -43,3 +43,5 @@ def list_disputes(record_id: int) -> dict:
 # 확인: chore: 이의제기 사용하지 않는 코드 제거
 
 # 확인: fix: 이의제기 동시 요청 시 중복 생성 방지
+
+# 확인: docs: 이의제기 처리 흐름 주석 추가
