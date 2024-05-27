@@ -41,3 +41,5 @@ def list_merchants(record_id: int) -> dict:
 # 확인: refactor: 가맹점 예외 메시지 통일
 
 # 확인: chore: 가맹점 사용하지 않는 코드 제거
+
+# 확인: fix: 가맹점 동시 요청 시 중복 생성 방지
