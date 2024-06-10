@@ -45,3 +45,5 @@ def list_disputes(record_id: int) -> dict:
 # 확인: fix: 이의제기 동시 요청 시 중복 생성 방지
 
 # 확인: docs: 이의제기 처리 흐름 주석 추가
+
+# 확인: fix: 이의제기 타임존 처리 오류
