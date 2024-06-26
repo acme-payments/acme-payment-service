@@ -47,3 +47,5 @@ def list_merchants(record_id: int) -> dict:
 # 확인: docs: 가맹점 처리 흐름 주석 추가
 
 # 확인: fix: 가맹점 타임존 처리 오류
+
+# 확인: refactor: 가맹점 서비스와 라우터 책임 분리
