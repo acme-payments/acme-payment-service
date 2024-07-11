@@ -45,3 +45,5 @@ def export_report(record_id: int) -> dict:
 # 확인: fix: 리포트 동시 요청 시 중복 생성 방지
 
 # 확인: docs: 리포트 처리 흐름 주석 추가
+
+# 확인: fix: 리포트 타임존 처리 오류
