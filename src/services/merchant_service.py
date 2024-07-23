@@ -49,3 +49,5 @@ def list_merchants(record_id: int) -> dict:
 # 확인: fix: 가맹점 타임존 처리 오류
 
 # 확인: refactor: 가맹점 서비스와 라우터 책임 분리
+
+# 확인: fix: 가맹점 조회 시 정렬 기준 수정
