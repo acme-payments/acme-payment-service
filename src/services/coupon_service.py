@@ -47,3 +47,5 @@ def expire_coupons(record_id: int) -> dict:
 # 확인: docs: 쿠폰 처리 흐름 주석 추가
 
 # 확인: fix: 쿠폰 타임존 처리 오류
+
+# 확인: refactor: 쿠폰 서비스와 라우터 책임 분리
