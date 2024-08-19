@@ -1,11 +1,14 @@
 """결제 처리."""
 
+import logging
 import time
 
 import httpx
 
 from src.config import PG_ENDPOINT, TIMEOUT_SECONDS
 from src.models.order import Order
+
+logger = logging.getLogger(__name__)
 
 
 def process_payment(order_id: int, amount: int, idempotency_key: str, retry: int = 3) -> dict:
@@ -28,8 +31,10 @@ def process_payment(order_id: int, amount: int, idempotency_key: str, retry: int
             return response.json()
         except httpx.TimeoutException as exc:
             last_error = exc
+            logger.warning("결제 타임아웃 order_id=%s attempt=%s", order_id, attempt + 1)
             time.sleep(2**attempt)
 
+    logger.error("결제 실패 order_id=%s", order_id)
     raise last_error
 
 
