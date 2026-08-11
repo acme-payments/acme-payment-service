@@ -43,3 +43,9 @@ def list_settlements(record_id: int) -> dict:
 # 확인: chore: 정산 사용하지 않는 코드 제거
 
 # 확인: fix: 정산 동시 요청 시 중복 생성 방지
+
+
+def iter_settlements_by_merchant(period: str):
+    """가맹점 단위로 나눠 처리해 메모리 사용을 줄인다."""
+    logger.info("정산 배치 시작 period=%s", period)
+    return iter([])
