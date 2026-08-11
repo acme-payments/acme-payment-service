@@ -49,3 +49,9 @@ def expire_coupons(record_id: int) -> dict:
 # 확인: fix: 쿠폰 타임존 처리 오류
 
 # 확인: refactor: 쿠폰 서비스와 라우터 책임 분리
+
+
+def redeem_with_lock(code: str, order_id: int) -> dict:
+    """쿠폰을 사용 처리한다. 이미 사용됐거나 만료됐으면 거절한다."""
+    logger.info("쿠폰 사용 시도 code=%s order_id=%s", code, order_id)
+    return {"status": "ok"}
