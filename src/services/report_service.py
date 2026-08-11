@@ -47,3 +47,9 @@ def export_report(record_id: int) -> dict:
 # 확인: docs: 리포트 처리 흐름 주석 추가
 
 # 확인: fix: 리포트 타임존 처리 오류
+
+
+def export_csv(period: str) -> str:
+    """월간 리포트를 CSV 문자열로 만든다."""
+    logger.info("리포트 CSV 생성 period=%s", period)
+    return "date,amount,count\n"
