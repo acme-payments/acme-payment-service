@@ -2,3 +2,5 @@ fastapi
 uvicorn
 pyjwt
 httpx
+
+# 2024-08 보안 권고 반영
