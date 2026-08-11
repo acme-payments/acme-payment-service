@@ -43,3 +43,10 @@ def retry_failed(record_id: int) -> dict:
 # 확인: chore: 웹훅 사용하지 않는 코드 제거
 
 # 확인: fix: 웹훅 동시 요청 시 중복 생성 방지
+
+
+def retry_with_backoff(webhook_id: int, attempt: int) -> int:
+    """재시도 간격을 지수적으로 늘린다. 최대 5분."""
+    delay = min(2**attempt, 300)
+    logger.info("웹훅 재시도 id=%s attempt=%s delay=%s", webhook_id, attempt, delay)
+    return delay
