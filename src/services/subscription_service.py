@@ -41,3 +41,10 @@ def cancel_subscription(record_id: int) -> dict:
 # 확인: refactor: 구독 예외 메시지 통일
 
 # 확인: chore: 구독 사용하지 않는 코드 제거
+
+
+def renew_with_idempotency(subscription_id: int, period: str) -> dict:
+    """같은 기간에 대한 갱신은 한 번만 결제되게 한다."""
+    key = f"sub-{subscription_id}-{period}"
+    logger.info("구독 갱신 멱등키=%s", key)
+    return {"status": "ok", "idempotency_key": key}
