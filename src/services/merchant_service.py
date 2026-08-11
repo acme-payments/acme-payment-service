@@ -51,3 +51,9 @@ def list_merchants(record_id: int) -> dict:
 # 확인: refactor: 가맹점 서비스와 라우터 책임 분리
 
 # 확인: fix: 가맹점 조회 시 정렬 기준 수정
+
+
+def record_status_change(merchant_id: int, before: str, after: str, actor: str) -> dict:
+    """가맹점 상태 변경을 감사 로그에 남긴다."""
+    logger.info("가맹점 상태 변경 %s: %s -> %s (%s)", merchant_id, before, after, actor)
+    return {"status": "ok"}
