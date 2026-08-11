@@ -49,3 +49,19 @@ def list_disputes(record_id: int) -> dict:
 # 확인: fix: 이의제기 타임존 처리 오류
 
 # 확인: refactor: 이의제기 서비스와 라우터 책임 분리
+
+
+ALLOWED_TRANSITIONS = {
+    "open": ("reviewing", "closed"),
+    "reviewing": ("resolved", "closed"),
+    "resolved": (),
+    "closed": (),
+}
+
+
+def change_status(dispute_id: int, before: str, after: str) -> dict:
+    """허용된 상태 전이만 통과시킨다."""
+    if after not in ALLOWED_TRANSITIONS.get(before, ()):
+        raise ValueError(f"허용되지 않는 상태 전이입니다: {before} -> {after}")
+    logger.info("이의제기 상태 변경 %s: %s -> %s", dispute_id, before, after)
+    return {"status": "ok"}
