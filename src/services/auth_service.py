@@ -27,8 +27,17 @@ class AuthService:
         to_encode["exp"] = expire
         return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
 
-    def verify_token(self, token: str) -> dict:
-        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+    def verify_token(self, token: str, verify_exp: bool) -> dict:
+        """만료 검사 여부를 선택할 수 있게 한다.
+
+        배치에서 만료된 토큰의 사용자 정보를 읽어야 하는 경우가 있다.
+        """
+        payload = jwt.decode(
+            token,
+            SECRET_KEY,
+            algorithms=[ALGORITHM],
+            options={"verify_exp": verify_exp},
+        )
         return payload
 
     def authenticate_user(self, email: str, password: str):
